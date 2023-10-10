@@ -1,0 +1,205 @@
+:root{
+    background-color: #d5dce4;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  auto;
+    margin-top: 15vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.smalltext{
+    font-size: small;
+}
+.first{
+    flex-basis: 55%;
+    padding-left: 20px;
+}
+.second{
+    /* height: 360px; */
+    /* flex-basis: 45%; */
+    /* width: 100%; */
+}
+.first > h1{
+    margin-bottom: 20px;
+}
+.margin-right{
+    margin-right: 8px;
+}
+.margin-top{
+    margin-top: 16px;
+}
+.lists{
+    margin-bottom: 24px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d5dce4;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background-color: #03254d;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ce1c0f;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(170, 37, 27, 0.5);
+
+}
+.visible{
+    display: block;
+}
+.valid{
+    background-color: #9fe9c4;
+    border: 1px solid #9fe9c4;
+}
+.end{
+    /* display: none; */
+    border-radius: 10px;
+    background-color: #d5dce4;
+    padding: 20px;
+    height: 320px;
+    width: 450px;
+}
+#error{
+    float: right;
+    color: #fdd;
+}
+input.invalid {
+    border-color: #900;
+    background-color: #fdd;
+  }
+input[type="email"] {
+    padding-left: 10px;
+}
+  input:focus.invalid {
+    outline: none;
+  }
+  
+  /* This is the style of our error messages */
+  .error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    border: 1px solid #900;
+  }
+
+  .success-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .success-items{
+    background-color: #fff;
+    height: 350px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
+  @media (max-width:800px) {
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+            
+            height: 100vh;
+            margin: auto;
+            width: 300px;
+            padding: 0px !important;
+            border-radius: 0;
+        }
+    
+        .secondimg{
+            /* display: none; */
+            width: 100vh!important;
+            /* padding: -20px !important; */
+            margin-top: -170px;
+            margin-bottom: -150px;
+            /* margin-left: 0px; */
+            /* margin-right: 100px; */
+            /* align-items: center; */
+        }
+        .second{
+            flex-basis: 35%;
+            margin-bottom: 20px;
+        }
+        .mobileview{
+            background-image: url(./assets/images/illustration-sign-up-mobile.svg) ;
+            height: 400px;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: -20px;
+        }
+        .first{
+            margin-top: -150px;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-basis: 65%;
+        }
+        .success-container{
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .success-items{
+            background-color: #fff;
+            height: 100vh;
+            width: 300px;
+            padding: 30px;
+            border-radius: 0;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+        .success-btn{
+            position: relative;
+            top: 180px;
+            margin-bottom: 20px;
+           
+        }
+  }

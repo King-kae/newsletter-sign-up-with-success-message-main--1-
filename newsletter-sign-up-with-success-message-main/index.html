@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="index.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sign-up form start -->
+      <div class="first">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="lists margin-top">
+          <p><img src="./assets/images/icon-list.svg" class="margin-right" alt=""> Product discovery and building what matters</p>
+          <p><img src="./assets/images/icon-list.svg" class="margin-right" alt=""> Measuring to ensure updates are a success</p>
+          <p><img src="./assets/images/icon-list.svg" class="margin-right" alt=""> And much more!</p>
+        </div>
+      
+        <form action="./end.html" name="form1" method="get" novalidate>
+          <div>
+            <span><b>Email address</b>
+            <span id="checking" style="display: none; color: red; float: right;"  aria-live="polite">valid email required</span></span>
+          </div>
+          <input type="email" name="mail" id="mail" placeholder="email@company.com" class="margin-top">
+          <span class="error"></span><br>
+          <button type="submit" name="submit" id="btn" class="margin-top">Subscribe to monthly newsletter</button>
+        </form>  
+      </div>
+      <div class="second">
+        <div class="mobileview"></div>
+        <img class="secondimg" src="./assets/images/illustration-sign-up-desktop.svg" alt="" style="height: 360px;">
+      </div>
+      <!-- Sign-up form end  -->
+  
+       <!-- Success message start  -->
+  
+  
+        
+  
+       <!-- Success message end -->
+  
+    
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
