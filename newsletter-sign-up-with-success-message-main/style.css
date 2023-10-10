@@ -40,11 +40,6 @@
     flex-basis: 55%;
     padding-left: 20px;
 }
-.second{
-    /* height: 360px; */
-    /* flex-basis: 45%; */
-    /* width: 100%; */
-}
 .first > h1{
     margin-bottom: 20px;
 }
