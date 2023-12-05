@@ -9,7 +9,7 @@
 }
 .container{
     width: 700px;
-    height: 400px;
+    /* height: 400px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +84,7 @@ button:hover{
     border-radius: 10px;
     background-color: #d5dce4;
     padding: 20px;
-    height: 320px;
+    /* height: 320px; */
     width: 450px;
 }
 #error{

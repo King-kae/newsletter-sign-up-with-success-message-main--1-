@@ -1,7 +1,6 @@
 const form = document.querySelector('form')
 const email = document.getElementById('mail')
 const checking = document.getElementById('checking')
-let endtext = document.getElementById('end')
 
 
 const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -11,7 +10,9 @@ const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z
 
 email.addEventListener("input", () => {
     const isValid = emailRegExp.test(email.value)
-
+    let inputText = email.value
+    // console.log(inputText)
+    localStorage.setItem("emailUsed", inputText)
     if (isValid) {
         email.className = "valid"
         checking.textContent = ""
@@ -33,3 +34,4 @@ form.addEventListener('submit', (event) => {
     }
 })
 
+console.log('rest')
